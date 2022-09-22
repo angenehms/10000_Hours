@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+
+/* --------------------- 아래는 큰구조 입니다 --------------------- */
+
+
+body {
+    background-color: #5B2386;
+}
+
+.wrapper {
+    width: 764px;
+    height: 824px;
+    margin: 0 auto; /* wrapper 전체 가운데 정렬 */
+
+    text-align: center; /* wrapper 내 inline 요소 가운데 정렬 */
+}
+
+
+/* --------------------- 아래는 header 입니다 --------------------- */
+
+
+/* .header_logo { 1만 시간의 법칙 로고
+    padding: 100px 0;
+    background-image: url(img/clock.png);
+    background-repeat: no-repeat;
+} */
+
+.header_sub { /* 연습은 어제의 당신보다 당신을 더 낫게 만든다. */
+    font-family: 'OTEnjoystoriesBA', sans-serif;
+    color: #F5DF4D; 
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+/* --------------------- 아래는 main 입니다 --------------------- */
+
+
+.main_quotes .font_bold_small { /* background-image 뺐음 중복돼서.. 아래 선택자에 서술함*/
+    font-family: 'GmarketSansBold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.main_quotes { /* 메인 첫번째 인용구 */
+    /* background-image: url(img/quotes.png);
+    background-repeat: no-repeat; */
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.section_para { /* main 에 <p> 요소들 스타일지정 */
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+.font_bold_big { /* '프로그래밍', '5110' 텍스트 크게 */
+    font-weight: 700;
+    font-size: 72px;
+}
+
+input { /* 인풋창 전체 */
+    text-align: center;
+    width: 228px;
+    height: 57px;
+
+    background-color: #ffffff;
+    border-radius: 7px;
+    
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.yellow_button_first { /* 첫번째 며칠동안 노란버튼 */
+    width: 565px;
+    height: 66px;
+
+    border: none;
+
+    background-color: #fcee21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+
+    font-family: 'GmarketSansBold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #582386;
+}
+
+.yellow_button_second { /* 두번째 GO!GO! 노란버튼 */
+    width: 356px;
+    height: 66px;
+
+    border: none;
+
+    background-color: #fcee21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+
+    font-family: 'GmarketSansBold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #582386;
+}
+
+.white_button { /* 하얀색 공유하기 버튼 */
+    width: 191px;
+    height: 66px;
+
+    border: none;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+
+    font-family: 'GmarketSansBold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #582386;
+}
+
+/* --------------------- 아래는 footer 입니다 --------------------- */
+
+.footer_copyright {
+    /* width: 365px;
+    height: 34px; */ 
+    
+    /* 위 width, height 값은 피그마 보고 한건데 이거 풀면 왜 가운데 정렬이 흐트러지나요? */
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+
+/* --------------------- 아래는 레이아웃 입니다 --------------------- */
+
+header {
+    position: relative;
+}
+
+.header_logo {
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    top: 75px;
+    left: 182px;
+    
+}
+
+.clock {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 50px;
+    left: 320px;
+}
+
+.header_sub {
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 182px;
+}
+
+
+/* --- */
+
+main {
+    position: relative;
+}
+
+.section_first {
+    position: absolute;
+    width: 450px;
+    top: 300px;
+    left: 160px;
+}
+
+.main_quotes_img {
+    position: absolute;
+    width: 480px;
+    top: 50px;
+    left: -20px;
+} 
+
+.section_second {
+    position: absolute;
+    top: 480px;
+}
+
+.yellow_button_first {
+    /* position: absolute; */
+    margin-top: 70px;
+}
+
+.section_second_click {
+    position: absolute;
+    top: 280px;
+}
+
+.section_third {
+    position: absolute;
+    top: 900px;
+}
+
+.section_third p {
+    width: 700px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.yellow_button_second {
+    width: 350px;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+}
+
+.white_button {
+    width: 170px;
+    position: absolute;
+    top: 350px;
+    left: 450px;
+}
+
+/* --- */
+
+footer {
+    position: relative;
+}
+
+.footer_logo {
+    position: absolute;
+    left: 300px;
+    top: 1450px;
+}
+
+.footer_copyright {
+    padding-bottom: 50px; /* 하단부 간격조정이 왜 마진은 안되고 패딩만 되지? */
+    position: absolute;
+    top: 1500px;
+    left: 180px;
+}
+
